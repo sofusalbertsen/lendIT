@@ -19,6 +19,6 @@ and open the template in the editor.
     overflow-y: scroll;
 }
 .picture-list img{
-    margin:5px;
-    padding: 5px;
+    margin:8px;
+    padding: 8px;
 }
