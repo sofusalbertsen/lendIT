@@ -14,9 +14,9 @@ and open the template in the editor.
 {
     float: none !important;
 }
-.picture-list{
-    max-height: 400px;
-    overflow-y: scroll;
+.picture-list, #MainCat,#SecCat{
+    max-height: 300px;
+    overflow-y: auto;
 }
 .picture-list img{
     margin:8px;
