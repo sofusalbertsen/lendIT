@@ -16,7 +16,11 @@ and open the template in the editor.
 }
 .picture-list, #MainCat,#SecCat{
     max-height: 350px;
-    overflow-y: auto;
+    overflow-y: auto;   
+}
+.picture-list{
+    margin-top: 2px;
+    border-top: 1px solid #ccc;
 }
 .picture-list img{
     margin:8px;
