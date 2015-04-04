@@ -1,0 +1,224 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link href="css/themes/start/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/themes/start/theme.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="css/borrow.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lendout.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="navbar-brand" id="logo" src="img/Logo.png" alt=""/>
+                </div>
+
+
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="borrow.html">Borrow</a></li>
+                    <li class="active"><a>Lent out</a></li>
+                </ul>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right" role="form">
+                        <div class="form-group login-grp">
+                            <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group login-grp" >
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" id="btn-login" class="btn btn-link">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"> </span> Sign in</button>
+                        <button id="btn-show-login" class="btn btn-link">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"> </span></button>
+                    </form>
+
+                    <div class="input-group col-md-2 navbar-right" id="custom-search-input">
+                        <input type="text" class="form-control input-lg" placeholder="Search" >
+                        <span class="input-group-btn">
+                            <button class="btn btn-link btn-lg" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+
+                </div><!--/.navbar-collapse -->
+            </div>
+        </nav>
+        <!--    End of navigation bar, beginning the main container    
+        -->
+        <div id="top-maincontent" class="container">
+            <div  class="row">
+                <div class="col-md-6 col-sm-12"> <!--First divide the whole container in 2 with 2 span diff -->
+                    <p class="text-muted">Select what kind of item you are lending out:</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            
+                                <!--all this is dynamic IRL-->
+                                <ul id="MainCat" class="nav nav-pills" >
+                                    <li ><a href="#">Kitchen Supplies </a></li>
+                                    <li ><a href="#">Games</a></li>
+                                    <li     ><a href="#">Tools </a></li>
+                                    <li ><a href="#">Electronics</a></li>
+                                    <li ><a href="#">Housing</a></li>
+                                    <li ><a href="#">Furniture</a></li>
+
+                                </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6 subsection">
+                            <!--all this is dynamic IRL-->
+                            <div class="subcategorydata">        
+                                <ul id="SecCat" class="nav nav-pills" >
+                                    <li ><a href="#">Pots and pans<span class="badge">45</span></a></li>
+                                    <li ><a href="#">Fridges<span class="badge">5</span></a></li>
+                                    <li ><a href="#">professional equipment <span class="badge">21</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="subcategorydata">        
+                                <ul id="SecCat" class="nav nav-pills" >
+                                    <li ><a href="#">Board games<span class="badge">25</span></a></li>
+                                    <li ><a href="#">Pen and paper games<span class="badge">5</span></a></li>
+                                    <li ><a href="#">Misc. games <span class="badge">12</span></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="subcategorydata">        
+                                <ul id="SecCat" class="nav nav-pills" >
+                                    <li ><a href="#">Hammer<span class="badge">42</span></a></li>
+                                    <li ><a href="#">Saw<span class="badge">25</span></a></li>
+                                    <li ><a href="#">Driller <span class="badge">3</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label >Where are you lending out from?</label> 
+                                    <div class="input-group">
+ 
+<input type="text" id="address" placeholder="Adress" class="form-control" required>
+      <span class="input-group-btn">
+        <button id="nametogpscord" class="btn btn-default" type="button">Pin it!</button>
+      </span>
+                                    </div>
+                                    <br>
+
+                                    
+                                    <div id="map-canvas"></div>
+                                </div>
+                            </div>
+                            <!--TODO: eula mm here-->
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <!--if time look at http://html5demos.com/dnd-upload-->
+                    <img src="http://placehold.it/500x300">
+                    <span class="btn btn-default btn-file">
+                        Upload Photo <input type="file">
+                    </span>
+
+                    <hr>
+                    <!--TODO: picture discription price and foto upload and submit--> 
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="control-group">
+                                <div class="controls">                     
+                                    <textarea id="fwtextarea" rows="4" name="textarea" placeholder="Describe the product. Is there any specifics that people needs to know?"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-inline">
+                                <label class="sr-only" for="ppd">Amount (in Danish Krone)</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">DK Kr.</div>
+                                    <input type="number" class="form-control" id="ppd" placeholder="Price pr day">
+                                    <div class="input-group-addon">.00</div>
+                                </div>
+                            </div>
+                            <div class="form-inline">
+                                <label class="sr-only" for="ppw">Amount (in Danish Krone)</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">DK Kr.</div>
+                                    <input type="number" class="form-control" id="ppd" placeholder="Price pr week">
+                                    <div class="input-group-addon">.00</div>
+                                </div>
+                            </div>
+                            <!--<a href="#" data-toggle="popover" data-trigger="focus" title="The last tip!">twitter handle</a>-->
+                            <div class="checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"> I have read and accepted the terms of service agreement 
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox">
+                                    <input type="checkbox"> I want my items insured in the lending period for 10% of the lend out price.
+                                </label>
+                            </div>
+                            <br>
+                            <div class="controls">
+                                <button id="lendout" class="btn btn-lg btn-default">Lend out  <span class="glyphicon glyphicon-ok"></span></button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!--    End of the main container, beginning footer
+        -->
+
+        <div id="fcontain" class="container">
+            <footer class="footer">
+
+                <p class="text-muted">About lendIT
+                    <button class="btn btn-link pull-right">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"> </span> Sign in</button></p>
+
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+<!--        <script src="js/vendor/ui/autocomplete.js" type="text/javascript"></script>-->
+        <script src="js/borrow.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/lendout.js" type="text/javascript"></script>
+        <script src="js/vendor/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/dawa-autocomplete.js" type="text/javascript"></script>
+    </body>
+</html>
