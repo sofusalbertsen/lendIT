@@ -8,17 +8,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <link href="css/search.css" rel="stylesheet" type="text/css"/>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/main.css">
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -58,14 +59,14 @@
                         <button id="btn-show-login" class="btn btn-link">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"> </span></button>
                     </form>
-<div class="input-group col-md-2 navbar-right" id="custom-search-input">
-                    <input type="text" class="form-control input-lg" placeholder="Search" >
-                    <span class="input-group-btn">
-                        <button class="btn btn-link btn-lg" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div>
+                    <div class="input-group col-md-2 navbar-right" id="custom-search-input">
+                        <input type="text" class="form-control input-lg" placeholder="Search" >
+                        <span class="input-group-btn">
+                            <button class="btn btn-link btn-lg" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
                 </div><!--/.navbar-collapse -->
             </div>
         </nav>
@@ -73,67 +74,62 @@
         <div id="top-maincontent" class="container">
             <div class="row">
                 <div class="col-md-12">
-                 
-                        <video class="hidden-sm hidden-xs" autoplay loop id="bgndVideo">
-                            <source type="video/webm" src="video/frontpage.webm">        
-                            <source type="video/mp4" src="video/frontpage.m4v" >
-                        </video>
 
-                        <div id="firstcontent" class="row">   
-                            <div class="col-md-5">
-                                <p class="lead">Need a projector for the next football match? <br>
-                                    Or a bike to your friend from the countryside?
-                                    <a class="btn btn-link btn-m pull-right" href="#" role="button">Borrow it here &raquo;</a>
-                                </p>
-                            </div>
-                            <div class="col-md-2"></div>
-                            <div class="col-md-5"><img src="http://placehold.it/350x175"></div>
-<a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a>
+                    <video class="hidden-sm hidden-xs" autoplay loop id="bgndVideo">
+                        <source type="video/webm" src="video/frontpage.webm">        
+                        <source type="video/mp4" src="video/frontpage.m4v" >
+                    </video>
 
-
+                    <div id="firstcontent" class="row">   
+                        <div class="col-md-5">
+                            <p class="lead">Need a projector for the next football match? <br>
+                                Or a bike to your friend from the countryside?
+                                <a class="btn btn-link btn-m pull-right" href="#" role="button">Borrow it here &raquo;</a>
+                            </p>
                         </div>
-                        <div class="br"></div>
-
-                        <div  class="row">   
-                            <div class="col-md-5">
-                                <p class="lead">Do you use your sewing machine every day? 
-                                    <br> 
-                                    How about that trangia set you bought for the hike last decade? 
-                                    <br>
-                                    How about making som small cash out of that old bike you got?
-                                    <a class="btn btn-link btn-m pull-right" href="#" role="button">Sign up to LendIT out &raquo;</a>
-                                </p>
-                            </div>
-                            <div class="col-md-2"></div>
-                            <div class="col-md-5"><iframe
-                                    width="350"
-                                    height="175"
-                                    frameborder="0" style="border:0"
-                                    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD12D3WTPs1bbNV2XyMXoVzFBXe0GPRAMs&q=record+stores+in+Seattle">
-                                </iframe>
-                            </div>
-                        </div>
-
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5"><img src="http://placehold.it/350x175"></div>
 
                     </div>
+                    <div class="br"></div>
+
+                    <div  class="row">   
+                        <div class="col-md-5">
+                            <p class="lead">Do you use your sewing machine every day? 
+                                <br> 
+                                How about that trangia set you bought for the hike last decade? 
+                                <br>
+                                How about making som small cash out of that old bike you got?
+                                <a class="btn btn-link btn-m pull-right" href="#" role="button">Sign up to LendIT out &raquo;</a>
+                            </p>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                             <div id="map-canvas"></div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        
-        <div id="fcontain" class="container">
-        <footer class="footer">
-            
-                <p class="text-muted">About lendIT
-                <button class="btn btn-link pull-right">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"> </span> Sign in</button></p>
-             
-        </footer>
         </div>
-         
+
+        <div id="fcontain" class="container">
+            <footer class="footer">
+
+                <p class="text-muted">About lendIT
+                    <button class="btn btn-link pull-right">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"> </span> Sign in</button></p>
+
+            </footer>
+        </div>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     </body>
 </html>
