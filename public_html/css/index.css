@@ -8,9 +8,46 @@ and open the template in the editor.
     Author     : sofus
 */
 
-#map-canvas{
+#map-canvas,
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img ,
+  .carousel{
     width: 350px;
     height: 175px;
-    margin: 0px;
-    padding: 0px;
+   
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img 
+{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+/* .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height: 175px;
+    width: 350px;
+  }
+*/
+.carousel{
+margin-bottom: 50px;
+}
+#bgndVideo{
+    float: left;
+    margin-bottom: -600px;
+    opacity: 0.2;
+    overflow: hidden;
+    position: static;
+    width: 100%;
+    z-index: -10;
+}
+#fcontain{
+   
+    z-index: 10;
+    padding-top: 150px;
+    
+}
+#top-maincontent{
+    padding-top:45px;
 }
